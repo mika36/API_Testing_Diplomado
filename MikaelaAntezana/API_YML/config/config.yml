@@ -1,0 +1,4 @@
+api:
+  host: http://www.google.com
+  method: GET
+  code: 200
