@@ -1,10 +1,16 @@
 import math
+
 def isPrimeNumber(number):
-    square = math.sqrt(number)
-    print(square)
-    while(square =! 0):
+    initialNumber = number-1
+    secNumber = initialNumber - 1
+    while(secNumber>1):
+        multiplier = initialNumber*secNumber
+        initialNumber = multiplier
+        secNumber = secNumber - 1
+    numberToVerify = initialNumber + 1
 
-
-print(es primo)
-
-isPrimeNumber(5)
+    if(numberToVerify % number == 0):
+        print("El numero " + str(number) + " es primo")
+    else:
+        print("El numero " + str(number) + " no es primo")
+isPrimeNumber(12)
